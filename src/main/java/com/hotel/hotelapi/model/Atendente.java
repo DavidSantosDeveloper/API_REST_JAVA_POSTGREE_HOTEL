@@ -18,7 +18,7 @@ public class Atendente implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private long cod_hosp;
+	private long codAtend;
 	
 	@SuppressWarnings("deprecation")
     @NotNull
@@ -30,11 +30,11 @@ public class Atendente implements Serializable{
 
 
 
-    public long getCod_hosp() {
-		return cod_hosp;
+    public long getCodAtend() {
+		return codAtend;
 	}
-	public void setCod_hosp(long cod_hosp) {
-		this.cod_hosp = cod_hosp;
+	public void setCodAtend(long codAtend) {
+		this.codAtend = codAtend;
 	}
 	public String getNome() {
 		return nome;

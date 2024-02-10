@@ -22,7 +22,7 @@ public class Hospedagem implements Serializable{
 
     @Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private long cod_hospeda;
+	private long codHospeda;
 
 	// RELACAO COM HOSPEDE
 	@ManyToOne
@@ -43,11 +43,11 @@ public class Hospedagem implements Serializable{
 
 	private Date dt_sai;
 
-    public long getCod_hospeda(){
-        return this.cod_hospeda;
+    public long getCodHospeda(){
+        return this.codHospeda;
     }
-    public void setCod_hospeda(long cod_hospeda){
-        this.cod_hospeda=cod_hospeda;
+    public void setCodHospeda(long codHospeda){
+        this.codHospeda=codHospeda;
     }
     public Hospede getHospede(){
         return this.hospede;

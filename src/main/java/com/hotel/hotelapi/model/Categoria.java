@@ -20,7 +20,7 @@ public class Categoria implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	private long cod_cat;
+	private long codCat;
 	
 	@SuppressWarnings("deprecation")
     @NotNull
@@ -32,11 +32,11 @@ public class Categoria implements Serializable{
 
 
 
-    public long getCod_cat() {
-		return cod_cat;
+    public long getCodCat() {
+		return this.codCat;
 	}
-	public void setCod_cat(long cod_cat) {
-		this.cod_cat = cod_cat;
+	public void setCodCat(long codCat) {
+		this.codCat = codCat;
 	}
 	public String getNome() {
 		return nome;
